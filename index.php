@@ -71,8 +71,8 @@
 
 <body>
     <nav>
-        <a href="login.php">Login</a>
-        <a href="register.php">Register</a>
+        <a href="login.php">Se connecter</a>
+        <a href="register.php">S'inscrire</a>
     </nav>
 
     <div class="welcome">

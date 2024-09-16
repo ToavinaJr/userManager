@@ -161,8 +161,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </div>
 <div class="container">
     <nav>
-        <a href="login.php"><button>Login</button></a>
-        <a href="register.php"><button>Register</button></a>
+        <a href="login.php"><button>Se connecter</button></a>
+        <a href="register.php"><button>S'inscrire</button></a>
     </nav>
 </div>
 </body>
