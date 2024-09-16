@@ -19,8 +19,8 @@ if (!isset($_SESSION['user_id']) || !$_SESSION['user_name']) {
 </head>
 <body>
     <div class="container">
-        <h1>Bienvenue sur notre site !</h1>
-        <p>Nous sommes ravis de vous accueillir <?php echo $_SESSION['user_name']; ?>. Profitez de votre visite !</p>
+        <h1>Bienvenue sur notre site <?php echo $_SESSION['user_name']; ?> !</h1>
+        <p>Nous sommes ravis de vous accueillir . Profitez de votre visite !</p>
     </div>
     <!-- Button pur la déconnexion -->
     <a href="logout.php">Deconnexion</a>
