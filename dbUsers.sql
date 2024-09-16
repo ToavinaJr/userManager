@@ -59,7 +59,7 @@ CREATE TABLE `users` (
   UNIQUE KEY `email` (`email`),
   KEY `id_parcours` (`id_parcours`),
   CONSTRAINT `users_ibfk_1` FOREIGN KEY (`id_parcours`) REFERENCES `parcours` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -68,7 +68,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (13,'Toavina','toavina@gmail.com',1,'2024-09-16','$2y$10$PcURuNe1cdU9UOfweA2XSO3wCN/Xvk1L5S5glIVc0nDOa8HuW/4ce','bd0633a6902c4dc26ae17ad48cfd8e08dbaa3d11fb2d022256','2024-09-16 09:32:54');
+INSERT INTO `users` VALUES (16,'Toavina','toavinaaa@gmail.com',1,'2024-09-16','$2y$10$LBUYsGjUsVMf8cAJkzOk/ebmyF0FaNg.k0Gi/TiieHpbC6fv73sbK','a1e49c5c5986be2c85c96239bd227ff2324ef661a2682ba66b','2024-09-16 12:06:36'),(17,'admin','admin@gmail.com',1,'2024-05-12','$2y$10$RvUD21ZU5tFsVKdKuuMFVOkdaUMOwmNK54nXzF0Ag.Sdh81AwY9B.',NULL,NULL),(18,'Toavina','toavina@gmail.com',1,'2024-09-16','$2y$10$diGmr0Kt9hXdoqmeVZhTPOqM1Lp2uhdNwmSXV64rZsjadtFF.2A3i','85c2480e9b0744adb8fca7120ec6e296c579a4ca2d45d232d3','2024-09-16 15:59:32');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -81,4 +81,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-09-16  8:54:02
+-- Dump completed on 2024-09-16 15:06:18
