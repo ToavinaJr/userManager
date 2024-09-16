@@ -16,7 +16,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            align-items: center;
             height: 100vh;
             padding: 0;
             margin: 0;
@@ -91,13 +90,25 @@
             display: block;
             text-align: center;
             margin-top: 15px;
-            color: #3498db;
-            text-decoration: none;
-            font-size: 14px;
         }
 
-        a:hover {
-            text-decoration: underline;
+        a .button {
+            display: inline-block;
+            width: 100%;
+            padding: 12px;
+            background-color: #3498db;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        a .button:hover {
+            background-color: #2980b9;
         }
 
         /* Ajustement des messages PHP (si applicable) */
@@ -165,7 +176,7 @@
         <input type="submit" value="S'inscrire">
 
         <!-- Lien vers la connexion -->
-        <a href="login.php">Se connecter</a>
+        <a href="login.php" class="button">Se connecter</a>
     </form>
 
 </body>

@@ -48,16 +48,6 @@ En résumé, pour insérer une date dans MySQL :
 - Utilisez CURRENT_DATE() pour la date actuelle
 - Utilisez STR_TO_DATE() pour convertir une chaîne de date
 
-Assurez-vous que le format de la date correspond bien à celui attendu par MySQL pour éviter les erreurs d'insertion.
-
-Citations:
-[1] https://www.statology.org/mysql-insert-date/
-[2] https://www.ntchosting.com/encyclopedia/databases/mysql/insert-date/
-[3] https://www.mysqltutorial.org/mysql-basics/mysql-insert-date/
-[4] https://www.w3schools.com/mysql/mysql_dates.asp
-[5] https://www.statology.org/mysql-insert-datetime/
-[6] https://stackoverflow.com/questions/9907210/mysql-date-formats-difficulty-inserting-a-date
-[7] https://dev.mysql.com/doc/refman/8.4/en/date-and-time-literals.html
 
 ---
 

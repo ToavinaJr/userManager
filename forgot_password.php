@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (mail($email, $subject, $message, $headers)) {
             $successMessage = "Un email de réinitialisation de mot de passe a été envoyé.";
         } else {
-            
+            $errorMessage = "Un erreur c'est produite lors de l'envoie de l'email";
         }
     } else {
         $errorMessage = "Aucun utilisateur trouvé avec cet email.";
@@ -63,10 +63,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             font-family: 'Poppins', sans-serif;
             background-color: #f0f2f5;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
 
         .container {
-            max-width: 500px;
+            width: 500px;
             margin: 0 auto;
             background-color: #fff;
             padding: 20px;
@@ -126,6 +129,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             border-radius: 5px;
             margin-bottom: 20px;
         }
+        nav {
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+        }
     </style>
 </head>
 
@@ -135,7 +143,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <h1>Mot de passe oublié</h1>
 
     <?php if ($errorMessage): ?>
-        
+        <div class="error-message"><?php echo $errorMessage; ?></div>
     <?php endif; ?>
 
     <?php if ($successMessage): ?>
@@ -148,8 +156,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <button type="submit">Envoyer</button>
     </form>
-</div>
 
+    
+</div>
+<div class="container">
+    <nav>
+        <a href="login.php"><button>Login</button></a>
+        <a href="register.php"><button>Register</button></a>
+    </nav>
+</div>
 </body>
 
 </html>
