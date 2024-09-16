@@ -1,12 +1,15 @@
 body {
-    color: white; /* Couleur du texte */
-    font-family: Arial, sans-serif; /* Police de caractères */
-    text-align: center; /* Centrer le texte */
-    padding: 50px; /* Espacement intérieur */
+    color: white; 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    padding: 50px; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .container {
     background-color: #3498db;
-    border-radius: 10px; /* Coins arrondis */
-    padding: 20px; /* Espacement intérieur */
+    border-radius: 10px; 
+    padding: 20px; 
 }

@@ -1,5 +1,4 @@
 <?php
-
 session_start(); // Démarrer la session
 
 // Vérifier si l'utilisateur est connecté

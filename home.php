@@ -23,6 +23,8 @@ if (!isset($_SESSION['user_id']) || !$_SESSION['user_name']) {
         <p>Nous sommes ravis de vous accueillir . Profitez de votre visite !</p>
     </div>
     <!-- Button pur la déconnexion -->
-    <a href="logout.php">Deconnexion</a>
+    <div class="container">
+        <a href="logout.php">Deconnexion</a>
+    </div>
 </body>
 </html>
